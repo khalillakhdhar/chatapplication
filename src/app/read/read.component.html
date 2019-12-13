@@ -1,3 +1,7 @@
 <app-create></app-create>
 
-<p>read works!</p>
+
+<table class="table">
+    <tr  ><td>Id</td><td>titre</td><td>description</td><td>Action</td></tr>
+    <tr  *ngFor="let tp of topics"><td>{{tp.id}}</td><td>{{tp.titre}}</td><td>{{tp.description}}</td><td><input type="button" class="btn btn-primary" value="acceder"></td></tr>
+    </table>
